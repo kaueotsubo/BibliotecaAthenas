@@ -1,0 +1,29 @@
+ create database dbathenas;
+
+use dbathenas;
+
+CREATE TABLE usuario (
+  codusuario int(11) auto_increment,
+  nome varchar (255) not null,
+  dataNascimento date not null,
+  email varchar(100) NOT NULL,
+  senha varchar(255) NOT NULL,
+  confSenha varchar (255) NOT NULL,
+  primary key (codUsuario, email)
+);
+
+CREATE TABLE livros (
+  codLivro int(11) primary key auto_increment,
+  nomeLivros varchar(255) NOT NULL, 
+  autor varchar(255) NOT NULL,
+  descricao varchar (255) NOT NULL,
+  genero varchar(100) NOT NULL,
+  classificacaoIndicativa varchar(20) DEFAULT NULL
+);
+
+CREATE TABLE adm (
+  codAdm INT (11) AUTO_INCREMENT PRIMARY KEY,
+  nomeAdm VARCHAR (255) NOT NULL,
+  email VARCHAR (100) NOT NULL,
+  senha VARCHAR (255) NOT NULL
+);
