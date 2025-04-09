@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body {
+  background-size: cover;
+  font-family: 'Outfit';
+  background-color: #FCF6EA;
+}
+
+/* ESTILIZAÇÃO BARRA DE ROLAGEM */
+
+::-webkit-scrollbar {
+  width: 8px; /* Largura da barra de rolagem */
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+  background: transparent; /* Fundo da trilha da barra de rolagem */
+}
+
+/* Cor da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background: rgba(211, 156, 36, 0.2); /* Cor da parte que desliza (rgba para transparência) */
+  border-radius: 10px; /* Arredondar os cantos da barra de rolagem */
+}
+
+/* Hover - Barra de rolagem quando o cursor está sobre ela */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(211, 156, 36, 0.5); /* Cor da barra de rolagem ao passar o cursor */
+}
+
+/* FIM DA ESTILIZAÇÃO BARRA DE ROLAGEM */
+
+/* COMEÇO DO CSS DO MENU */
+.menu_lateral {
+  width: 320px;
+  min-height: 100vh;
+  background-color: #FFFFFF;
+  position: fixed;
+}
+.header__logo img {
+  position: static;
+  padding: 1rem 7rem; /* Posição da logo */
+  width: 95px; /* Tamanho da foto */
+  height: auto;
+  margin-bottom: 30px;
+}
+.catego a{
+  color: #D39C24;
+  text-decoration: none;
+  font-size: 18px;
+  margin-left: 50px;
+}
+.catego i{
+  margin-right: 13px;
+} /* FIM DO CSS DO MENU */
+
+.catego-baixo a{
+    color: #D39C24;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 50px;
+}
+.catego-baixo i{
+    margin-right: 13px;
+} /* FIM DO CSS DO MENU */
+
+
+/* COMEÇO DO CSS DA PARTE SUPERIOR */
+
+
+/* CSS BARRA DE PESQUISA */
+.pesquisar {
+  position: fixed;
+  margin-left: 320px;
+  width: 100%;
+  height: 80px;
+  background-color: #ffffff;
+  z-index: 2;
+}
+#barra{
+  width: 530px;
+  height: 38px;
+  margin-top: 20px;
+  position: fixed;
+  z-index: 1;
+  background-color: #FCF6EA;
+  border: none;
+  outline: none;
+  margin-left: 70px;
+  padding-left: 50px;
+  padding-right: 60px;
+  border-radius: 4px;
+}
+.lupa{
+  position: fixed;
+  margin-top: 16px;
+  z-index: 1;
+  margin-left: 90px;
+  width: 100px;
+  height: 100%;
+  line-height: 47px;
+  border-radius: 50 30px 10px 0;
+}
+#barra::placeholder {
+  color: #A8A6A2;
+  font-weight: 200;
+  font-size: 14px;
+  z-index: 1;
+}/* Fim do CSS da Barra */
+
+/* COMEÇO DO CSS DE FAVORITOS E PESSOA LOGADA */
+
+/*CSS DOS FAVORITOS */
+.fav{ 
+  margin-left: 1640px;
+}
+.fav i{
+  margin-top: 28px;
+  z-index: 2;
+  color: #D39C24;
+  position: fixed;
+} /*CSS DOS FAVORITOS */
+
+/*CSS DA PESSOA LOGADA */
+.person {
+position: fixed;
+z-index: 2;
+color: #D39C24;
+margin-top: 25px;
+margin-left: 1700px;
+font-size: 18px;
+font-weight: 500;
+}
+.person i{
+padding-right: 10px;
+} /* FIM DO CSS DA PESSOA LOGADA */
+
+
+/* FIM DO CSS DO CANTO SUPERIOR */
+
+
+/* COMEÇO DO CSS DA PARTE PRINCIPAL */
+
+.banner {
+  margin-top: 350px;
+}
+.banner img {
+  width: 1500px;
+  border-radius: 25px;
+} /* FIM DO CSS DO BANNER */
+
+.text { /*COMEÇO DO CSS DO "Loja Gratuita */
+    font-weight: 600;
+    color: #D39C24;
+    font-size: 25px;
+    margin-left: 365px;
+    position: absolute;
+    margin-top: 115px;
+} /*FIM DO CSS DO TEXTO */
+
+.principal {
+  margin-left: 350px;
+  position: absolute;
+  margin-top: 150px;
+}
+
+/*COMEÇO DO CSS DA COLUNA 1 DOS LIVROS */
+
+.book-wrapper { 
+  width: 1530px;
+  position: absolute;
+  margin: 0 auto;
+  column-count: 7;
+  column-gap: 12px;
+  padding: 4px;
+}
+.book-items {
+  position: relative;
+  cursor: default;
+  padding: 16px;
+  margin: 0;
+  display: grid;
+  break-inside: avoid;
+}
+
+.main-book-wrap {
+  position: relative;
+}
+
+.book-cover {
+  position: relative;
+}
+
+.book-cover .book-inside {
+  position: absolute;
+  width: 85%;
+  height: 96%;
+  top: 1%;
+  left: 16px;
+  border: 1px solid grey;
+  border-radius: 2px 6px 6px 2px;
+  background: white;
+  box-shadow: 10px 40px 40px -10px #00000030, inset -2px 0 0 grey,
+    inset -3px 0 0 #dbdbdb, inset -4px 0 0 white, inset -5px 0 0 #dbdbdb,
+    inset -6px 0 0 white, inset -7px 0 0 #dbdbdb, inset -8px 0 0 white,
+    inset -9px 0 0 #dbdbdb;
+}
+
+.book-cover .book-image {
+  line-height: 0;
+  position: relative;
+  border-radius: 2px 6px 6px 2px;
+  box-shadow: 6px 6px 18px -2px rgba(0, 0, 0, 0.2),
+    24px 28px 40px -6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  transform: perspective(2000px) rotateY(-15deg) translateX(-10px) scaleX(0.94);
+  cursor: pointer;
+}
+
+.book-image img {
+  grid-row: 1 / -1;
+  grid-column: 1;
+  width: 100%;
+  border-radius: 2px 6px 6px 2px;
+}
+
+.book-image:hover {
+  transform: perspective(2000px) rotateY(0deg) translateX(0px) scaleX(1);
+  transform-style: preserve-3d;
+  box-shadow: 6px 6px 12px -1px rgba(0, 0, 0, 0.1),
+    20px 14px 16px -6px rgba(0, 0, 0, 0.1);
+}
+
+.effect {
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  margin-left: 16px;
+  top: 0;
+  border-left: 2px solid #00000010;
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transition: all 0.5s ease;
+  z-index: 5;
+}
+
+.light {
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  border-radius: 3px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  top: 0;
+  right: 0;
+  opacity: 0.1;
+  transition: all 0.5s ease;
+  z-index: 4;
+}
+
+.book-image:hover .effect{
+    margin-left: 14px;
+} /* FIM DO CSS DA COLUNA 1 DOS LIVROS */
+
+/* C0MEÇO DO CSS DA COLUNA 2 DOS LIVROS */
+
+.book-wrapper2 { 
+    width: 1530px;
+    position: absolute;
+    column-count: 7;
+    column-gap: 12px;
+    padding: 4px;
+    margin-top: 3%;
+}
+
+.book-wrapper3 { 
+    width: 1530px;
+    position: absolute;
+    column-count: 7;
+    column-gap: 12px;
+    padding: 4px;
+    margin-top: 25%;
+}
+
+.book-wrapper4 { 
+    width: 1530px;
+    position: absolute;
+    column-count: 7;
+    column-gap: 12px;
+    padding: 4px;
+    margin-top: 47%;
+}

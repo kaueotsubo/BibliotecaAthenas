@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Outfit'; /* Fonte */
+    margin: 0 auto; 
+    padding: 0;
+    color: #d39c24;
+    overflow-x: hidden; /* Sem barra de rolagem */
+}
+body{
+    background: #e0d9c8; /* Cor do fundo */
+}
+
+/* FUNDO LOGO */
+.fundo-recup { /* Fundo branco */
+    background: #fcf6ea; /* Cor do fundo */
+    position: absolute; 
+    border-radius: 30px 0px 0px 30px; /* Bordas */
+    width: 450px; /* Largura */
+    height: 750px; /* Altura */
+}
+
+.logo img { /* Logo Login */
+    margin-left: 105px; /* Espaço para a esquerda */
+    position: absolute;
+    text-decoration: none; /* Para ficar sem linha no link */
+    margin-top: 140px; /* Espaço para de cima */
+    overflow: hidden; /* Sem barra de rolagem */
+}
+
+.redes{  /* Configurações gerais das Redes Sociais */
+    text-align: center;
+    margin-top: 640px;
+}
+.facebook{
+    overflow: hidden;
+    margin-right: 25px;
+    border-radius: 50px;
+    display: inline-block;
+}
+.twitter{ /* Twitter */
+    overflow: hidden;
+    margin-right: 25px;
+    border-radius: 50px;
+    display: inline-block;
+}
+.insta{ /* Instagram */
+    overflow: hidden;
+    margin-right: 25px;
+    display: inline-block;
+}
+.tiktok{ /* Tiktok */
+    overflow: hidden;
+    display: inline-block;
+}
+
+/* FIM DO CSS FUNDO BRANCO */
+
+.fundo-recuperar {
+    background: #d39c24;
+    position: relative;
+    display: flex;
+    border-radius: 30px;
+    width: 1130px;
+    height: 750px;
+    margin-top: 95px;
+}
+.text-recup{ /* Configurações do texto "RECUPERE SUA SENHA" */
+    margin-top: 105px;
+    font-size: 42;
+    color: #fcf6ea;
+    margin-left: 545px;
+    position: relative;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+.text-recup2{
+    font-size: 42;
+    color: #fcf6ea;
+    margin-left: 562px;
+    position: relative;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+.info{
+    font-size: 16;
+    color: #fcf6ea;
+    margin-top: 20px;
+    position: relative;
+    margin-left: 425px;
+}
+.input-box{ /* Configurações das caixas de texto */
+    margin-top: 30px;
+    margin-left: 485px;
+}
+.input-box input{ /* Caixas de texto */
+    width: 400px;
+    border: none;
+    height: 45px;
+    padding: 10px 30px;
+    font-weight: 300;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    background: #fcf6ea;
+}
+.input-box input::placeholder{ /* Cor do placeholder das caixas de texto */
+    color: #d39c249a;
+}
+.input-button{ /* Configurações do botão "Alterar senha" */
+    margin-top: 35px;
+    margin-left: 530px;
+}
+.input-button input{ /* Botão "Alterar senha" */
+    width: 155px;
+    height: 48px;
+    padding: 10px 22px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 18px;
+    outline: none;
+    color: #d39c24;
+    position: absolute;
+    border: none;
+    border-radius: 10px;
+    background: #fcf6ea;
+}
+
+.input-button2{ /* Configurações do botão "Voltar" */
+    margin-left: 720px;
+}
+.input-button2 input{ /* Botão "Voltar" */
+    width: 130px;
+    height: 48px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 18px;
+    outline: none;
+    color: #d39c24;
+    border: none;
+    border-radius: 10px;
+    background: #fcf6ea;
+}

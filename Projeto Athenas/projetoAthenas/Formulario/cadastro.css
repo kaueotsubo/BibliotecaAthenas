@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Outfit'; /* Fonte */
+    margin: 0 auto; 
+    padding: 0;
+    color: #d39c24;
+    overflow-x: hidden; /* Sem barra de rolagem */
+}
+body{
+    background: #e0d9c8; /* Cor do fundo */
+}
+
+/* FUNDO BRANCO */
+.fundo-login { /* Fundo branco */
+    background: #fcf6ea; /* Cor do fundo */
+    position: absolute; 
+    border-radius: 30px 0px 0px 30px; /* Bordas */
+    width: 450px; /* Largura */
+    height: 750px; /* Altura */
+}
+
+.logo img { /* Logo Login */
+    margin-left: 105px; /* Espaço para a esquerda */
+    position: absolute;
+    text-decoration: none; /* Para ficar sem linha no link */
+    margin-top: 140px; /* Espaço para de cima */
+    overflow: hidden; /* Sem barra de rolagem */
+}
+
+.redes{  /* Configurações gerais das Redes Sociais */
+    text-align: center; 
+    margin-top: 640px;
+}
+.facebook{ /* Facebook */
+    overflow: hidden;
+    margin-right: 25px;
+    border-radius: 50px;
+    display: inline-block;
+}
+.twitter{ /* Twitter */
+    overflow: hidden;
+    margin-right: 25px;
+    border-radius: 50px;
+    display: inline-block;
+}
+.insta{ /* Instagram */
+    overflow: hidden;
+    margin-right: 25px;
+    display: inline-block;
+}
+.tiktok{ /* Tiktok */
+    overflow: hidden;
+    display: inline-block;
+}
+
+/* FIM DO CSS FUNDO BRANCO */
+
+.fundo-cadastro {
+    background: #d39c24;
+    position: relative;
+    display: flex;
+    border-radius: 30px;
+    width: 1130px;
+    height: 750px;
+    margin-top: 95px;
+}
+.text-cadastro{ /* Configurações do texto "CADASTRO" */
+    margin-top: 65px;
+    font-size: 48;
+    color: #fcf6ea;
+    margin-left: 477px;
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.input-box{ /* Configurações das caixas de texto */
+    margin-top: 35px;
+    margin-left: 450px;
+}
+.input-box input{ /* Caixas de texto */
+    width: 340px;
+    border: none;
+    height: 45px;
+    padding: 10px 30px;
+    font-weight: 300;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    background: #fcf6ea;
+}
+.input-box input::placeholder{ /* Cor do placeholder das caixas de texto */
+    color: #d39c249a;
+}
+.possui-cad{ /* "Já possui cadastro? Clique aqui." */
+    margin-left: 663px;
+    margin-top: 19px;
+    font-size: 13px;
+    color: #fcf6ea;
+    text-align: center;
+}
+.possui-cad a{ /* O "aqui" do "Já possui cadastro? Clique aqui." */
+    color: #fcf6ea;
+}
+.possui-cad a:hover{ /* O "aqui" do "Já possui cadastro? Clique aqui." */
+    font-weight: 600;
+    color: #f8d588;
+}
+.input-button{ /* Configurações do botão "Cadastrar" */
+    margin-top: 20px;
+    margin-left: 545px;
+}
+.input-button input{ /* Botão "Cadastrar" */
+    width: 160px;
+    height: 48px;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 18px;
+    outline: none;
+    color: #d39c24;
+    border: none;
+    border-radius: 10px;
+    background: #fcf6ea;
+}

@@ -1,0 +1,591 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #FCF6EA;
+}
+
+/* ESTILIZAÇÃO BARRA DE ROLAGEM */
+
+::-webkit-scrollbar {
+    width: 8px; /* Largura da barra de rolagem */
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+    background: transparent; /* Fundo da trilha da barra de rolagem */
+}
+
+/* Cor da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background: rgba(211, 156, 36, 0.2); /* Cor da parte que desliza (rgba para transparência) */
+    border-radius: 10px; /* Arredondar os cantos da barra de rolagem */
+}
+
+/* Hover - Barra de rolagem quando o cursor está sobre ela */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(211, 156, 36, 0.5); /* Cor da barra de rolagem ao passar o cursor */
+}
+
+/* FIM DA ESTILIZAÇÃO BARRA DE ROLAGEM */
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn {
+    outline: none;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+nav {
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+}
+
+.superior {
+    background-color: #FCF6EA;
+    width: 100%;
+    height: 100px;
+}
+
+.logo {
+    position: absolute;
+    padding: 1.1rem;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 200px;
+    height: 40px;
+    margin-left: 220px;
+}
+
+.menu-op {
+    position: absolute;
+    margin-left: 830px;
+    padding: 2.1rem;
+    list-style: none;
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.menu-op a {
+    font-weight: 600;
+    color: #2c2724;
+    padding: 15px;
+}
+
+.menu-op a:hover {
+    color: #D39C24;
+}
+
+.container {
+    position: relative;
+    display: grid;
+}
+  
+.container__left {
+    padding-inline: 1rem;
+    padding: 17rem 0rem 0rem 15rem;
+}
+  
+.container__left h1 {
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    color: #2c2724;
+}
+  
+.container__left .btn {
+    padding: 1rem 2rem;
+    letter-spacing: 2px;
+    color: #FCF6EA;
+    z-index: 1;
+    background-color: #2c2724;
+    border-radius: 5rem;
+}
+  
+.container__left .btn:hover {
+    color: #FCF6EA;
+    background-color: #D39C24;
+}
+
+.container__right {
+    position: absolute;
+    width: 750px;
+    height: 450px;
+    display: flex;
+    background-color: #D39C24;
+    border-radius: 1rem;
+    margin-left: 880px;
+    margin-top: 140px;
+}
+
+.images {
+    display: flex;
+}
+
+.images img {
+    width: 320px;
+    height: 465px
+}
+  
+.content {
+    margin-top: 100px;
+    position: relative;
+    padding-inline: 2rem;
+}
+  
+.content h4 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #FCF6EA;
+}
+
+.content h2 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #FCF6EA;
+}
+  
+.content h3 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #FCF6EA;
+}
+  
+.content p {
+    line-height: 1.75rem;
+    color: #FCF6EA;
+}
+
+.beneficios {
+    text-align: center;
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center;
+    margin-top: 180px;
+}
+
+.beneficios .linha {
+    width: 920px;
+    height: 2px;
+    background-color: #D39C24;
+    margin-left: 500px;
+    margin-bottom: 10px;
+}
+.beneficios p {
+    font-size: 20px;
+    line-height: 1.5rem;
+    font-weight: 600;
+}
+
+.amarelao {
+    background-color: #D39C24;
+    margin-top: 60px;
+    width: 100%;
+    height: 350px;
+}
+
+.amarelao img {
+    height: 300px;
+    padding: 1.7rem 0 0 5.4rem; /* top, right, bottom, left */
+    position: absolute;
+    width: 600px;
+}
+
+.amarelao .text {
+    color: #FCF6EA;
+    position: relative;
+    padding: 65px 210px 4px 800px; /* top, right, bottom, left */
+}
+
+.amarelao .text h1{
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.amarelao .text p {
+    line-height: 1.75rem;
+    font-weight: 400;
+}
+
+.curvadao {
+    position: absolute;
+}
+
+.curvadao .a-curvadao {
+    margin: 10rem 0rem 0rem 28rem; /* top, right, bottom, left */
+    background-color: #D39C24;
+    border-radius: 150px 1px 100px 1px; /* superior e, superior d, inferior d, inferior e */
+    height: 580px;
+    width: 450px;
+    position: absolute;
+}
+
+.curvadao .a-curvadao img {
+    margin: 2.1rem 0 0 1.6rem; /* top, right, bottom, left */
+    height: 500px;
+    width: 390px;
+}
+
+.curvadao .text-curvadao {
+    color: #2c2724;
+    padding: 280px 400px 4px 960px; /* top, right, bottom, left */
+}
+
+.curvadao .text-curvadao h1{
+    margin-bottom: 1.8rem;
+    font-weight: 700;
+    font-size: 55px;
+}
+
+.curvadao .text-curvadao p {
+    line-height: 1.95rem;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.catego1 {
+    padding: 57.3rem 0 0 7rem; /* top, right, bottom, left */
+    position: absolute;
+}
+.catego1 .text-catego1 h1 {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 3.5rem;
+    margin-bottom: 27px;
+}
+.catego1 .text-catego1 p {
+    line-height: 1.95rem;
+    color: #4e4c4b;
+    font-weight: 500;
+}
+.catego2 {
+    padding: 57rem 0 0 35.5rem; /* top, right, bottom, left */
+    position: absolute;
+}
+.catego2 .text-catego2 h3 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 3rem;
+    margin: 13px 0 2px 0; /* top, right, bottom, left */
+}
+.catego2 .text-catego2 p {
+    line-height: 1.95rem;
+    color: #4e4c4b;
+    font-weight: 500;
+}
+.catego3 {
+    padding: 57rem 0 0 61.5rem; /* top, right, bottom, left */
+    position: absolute;
+}
+.catego3 .text-catego3 h3 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 3rem;
+    margin: 13px 0 2px 0; /* top, right, bottom, left */
+}
+.catego3 .text-catego3 p {
+    line-height: 1.95rem;
+    color: #4e4c4b;
+    font-weight: 500;
+}
+.catego4 {
+    padding: 57rem 0 0 87.5rem; /* top, right, bottom, left */
+    position: absolute;
+}
+.catego4 .text-catego4 h3 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 3rem;
+    margin: 13px 0 2px 0; /* top, right, bottom, left */
+}
+.catego4 .text-catego4 p {
+    line-height: 1.95rem;
+    color: #4e4c4b;
+    font-weight: 500;
+}
+
+.beneficios2 {
+    text-align: center;
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center;
+    margin: 74rem 0 0 0; /* top, right, bottom, left */
+}
+
+.beneficios2 .linha2 {
+    width: 670px;
+    height: 2px;
+    background-color: #D39C24;
+    margin-left: 620px;
+    margin-bottom: 10px;
+}
+.beneficios2 p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.reviews {
+    padding: 5rem 0 0 14rem; /* top, right, bottom, left */
+}
+.reviews .text-principal {
+    position: absolute;
+}
+.reviews .text-principal h1 {
+    font-size: 45px;
+    line-height: 3.1rem;
+    font-weight: 600;
+    margin: 0 0 2rem 0;
+    color: #D39C24;
+}
+.reviews .text-principal p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.7rem;
+    color: #4e4c4b;
+}
+
+
+.reviews .review-star {
+    padding: 2rem 0 0 42rem; /* top, right, bottom, left */
+}
+.reviews .review-star .r-star1 {
+    background-color: #f3c560e8;
+    width: 500px;
+    height: 55px;
+    position: absolute;
+    border-radius: 10px;
+}
+.reviews .review-star .r-star1 .img-stars {
+    position: absolute;
+    padding: 1.2rem 1rem 0 2rem;
+}
+.reviews .review-star .r-star1 p {
+    padding: 1.3rem 1rem 0 9.9rem;
+    font-weight: 700;
+}
+
+.reviews .review-star .r-star2 {
+    background-color: #f3c560e8;
+    margin: 5rem 0 0 3.4rem;
+    width: 500px;
+    height: 55px;
+    position: absolute;
+    border-radius: 10px;
+}
+.reviews .review-star .r-star2 .img-stars2 {
+    position: absolute;
+    padding: 1.2rem 1rem 0 2rem;
+}
+.reviews .review-star .r-star2 p {
+    padding: 1.3rem 1rem 0 9.9rem;
+    font-weight: 700;
+}
+
+.reviews .review-star .r-star3 {
+    background-color: #f3c560e8;
+    margin: 10rem 0 0 6.4rem;
+    width: 500px;
+    height: 55px;
+    position: absolute;
+    border-radius: 10px;
+}
+.reviews .review-star .r-star3 .img-stars3 {
+    position: absolute;
+    padding: 1.2rem 1rem 0 2rem;
+}
+.reviews .review-star .r-star3 p {
+    padding: 1.3rem 1rem 0 9.9rem;
+    font-weight: 700;
+}
+
+.reviews .coment1 {
+    margin: 20.8rem 0 0 0; /* top, right, bottom, left */
+    height: 250px;
+    border-radius: 13px;
+    background-color: #D39C24;
+    position: absolute;
+    width: 430px;
+}
+
+.reviews .coment1 .user {
+    margin: 2.1rem 0 0 2.7rem ; /* top, right, bottom, left */
+    position: absolute;
+}
+.reviews .coment1 i {
+    color: #FCF6EA;
+}
+
+.reviews .coment1 h1{
+    padding: 2.3rem 0 0.4rem 6.3rem; /* top, right, bottom, left */
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.reviews .coment1 h2{
+    padding: 0 0 1.6rem 6.3rem; /* top, right, bottom, left */
+    font-size: 15.5px;
+    font-weight: 500;
+    color: #FCF6EA;
+}
+
+.reviews .coment1 p {
+    padding: 0 2.6rem 0 2.7rem; /* top, right, bottom, left */
+    line-height: 1.5rem;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.reviews .coment2 {
+    margin: 23.5rem 0 0 30rem; /* top, right, bottom, left */
+    height: 250px;
+    border-radius: 13px;
+    position: absolute;
+    background-color: #D39C24;
+    width: 430px;
+}
+
+.reviews .coment2 h1{
+    padding: 2.3rem 0 0.4rem 6.3rem; /* top, right, bottom, left */
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.reviews .coment2 h2{
+    padding: 0 0 1.6rem 6.3rem; /* top, right, bottom, left */
+    font-size: 15.5px;
+    font-weight: 500;
+    color: #FCF6EA;
+}
+
+.reviews .coment2 p {
+    padding: 0 2.6rem 0 2.7rem; /* top, right, bottom, left */
+    line-height: 1.5rem;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;}
+
+.reviews .coment2 .user2 {
+    margin: 2.1rem 0 0 2.7rem ; /* top, right, bottom, left */
+    position: absolute;
+}
+.reviews .coment2 i {
+    color: #FCF6EA;
+}
+
+.reviews .coment3 {
+    margin: 26.5rem 0 0 60rem; /* top, right, bottom, left */
+    height: 250px;
+    border-radius: 13px;
+    background-color: #D39C24;
+    width: 430px;
+}
+
+.reviews .coment3 h1{
+    padding: 2.3rem 0 0.4rem 6.3rem; /* top, right, bottom, left */
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.reviews .coment3 h2{
+    padding: 0 0 1.6rem 6.3rem; /* top, right, bottom, left */
+    font-size: 15.5px;
+    font-weight: 500;
+    color: #FCF6EA;
+}
+
+.reviews .coment3 p {
+    padding: 0 2.6rem 0 2.7rem; /* top, right, bottom, left */
+    line-height: 1.5rem;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.reviews .coment3 .user3 {
+    margin: 2.1rem 0 0 2.7rem ; /* top, right, bottom, left */
+    position: absolute;
+}
+.reviews .coment3 i {
+    color: #FCF6EA;
+}
+
+.rodape {
+    margin: 10rem 0 0 0;
+    background-color: #f7daa4;
+    height: 15rem;
+    width: 100%;
+}
+.rodape .logo-f-rodape img{
+    margin: 0.95rem 3rem 0 4.5rem;
+    width: 150px;
+    position: absolute;
+    height: 200px;
+}
+.rodape .text-rodape h1 {
+    position: absolute;
+    font-weight: 600;
+    color: #2c2724;
+    font-size: 20px;
+    line-height: 1.5rem;
+    margin: 5rem 0rem 1rem 19rem;
+}
+.rodape .text-rodape h2 {
+    position: absolute;
+    font-weight: 600;
+    color: #D39C24;
+    font-size: 16px;
+    margin: 9rem 0 0 25rem;
+}
+
+.rodape .redes{  /* Configurações gerais das Redes Sociais */
+    margin: 12.3rem 0 0 62.5rem;
+    position: absolute;
+}
+.redes i {
+    color: #D39C24;
+}
+.redes .facebook{
+    overflow: hidden;
+    margin-right:20px;
+    border-radius: 50px;
+    display: inline-block;
+}
+.redes .twitter{ /* Twitter */
+    overflow: hidden;
+    margin-right: 20px;
+    border-radius: 50px;
+    display: inline-block;
+}
+.redes .insta{ /* Instagram */
+    overflow: hidden;
+    margin-right: 20px;
+    display: inline-block;
+}
+.redes .tiktok{ /* Tiktok */
+    overflow: hidden;
+    display: inline-block;
+}
+
+.rodape .text-rodape p {
+    position: absolute;
+    margin: 12.5rem 0 0 48rem;
+}

@@ -1,0 +1,122 @@
+<html>
+    <!--Incio do HEAD-->
+    <head>
+        <meta charset = "UTF-8">
+
+        <!--JAScript inicio confere se as senhas são iguais-->
+        <script>
+            function confereSenha() {
+                 const senha = document.querySelector('input[name=senha]');
+                 const confSenha = document.querySelector('input[name=confirme]');
+    
+                if (confSenha.value === senha.value){
+                     confSenha.setCustomValidity('');
+                 } else {
+                     confSenha.setCustomValidity('A senha de confirmação não corresponde. Por favor, verifique e insira novamente.');
+                 }
+            }
+        </script>
+        <!--Fim do JAScript-->
+
+        <title> Cadastro </title>
+        <link rel="shortcut icon" href="logo2.png" type="image/x-icon">
+        <link rel = "stylesheet" href = "cadastro.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <!--Fim do Head-->
+    <!--Inicio do Body-->
+    <body>
+        <!--Fundo do Cadastro-->
+        <div class = "fundo-cadastro">
+            <div id = "itens-cadastro">
+                <div class = "text-cadastro">
+                    CADASTRO
+                </div>
+                <!--Inicio do Form InstanciaCliente.php-->
+                <form action = "instanciaCliente.php" method = "POST">
+
+                    <!--Inicio da Caixa Nome-->
+                    <div class = "input-box">
+                        <input type = "text" id = "nome" name = "nome" placeholder = "Nome" required>
+                    </div>
+                    <!--Fim da Caixa Nome-->
+            
+                    <!--Inicio da caixa E-mail-->
+                    <div class = "input-box">
+                        <input type = "email" id = "email" name = "email" placeholder = "E-mail" required>
+                    </div>
+                    <!--Fim da caixa E-mail-->
+            
+                    <!--Inicio da caixa data De Nascimento-->
+                    <div class = "input-box">
+                        <input type = "date" style = "color:#d39c249a" id = "nascimento" name = "nascimento" placeholder = "Data de Nascimento" required>
+                    </div>
+                    <!--FIm da caixa Data De Nascimento-->
+            
+                    <!--Inicio da caixa Senha-->
+                    <div class = "input-box">
+                        <input type = password id = "senha" name = "senha" onchange='confereSenha();' placeholder = "Senha" required>
+                    </div>
+                    <!--Fim da caixa Senha-->
+            
+                    <!--Inicio da caixa Confirma Senha-->
+                    <div class = "input-box">
+                        <input type = password id = "senha" name = "confirme" onchange='confereSenha();' placeholder = "Confirme sua senha" required>
+                    </div>
+                    <!--Fim da caixa Confirma Senha-->
+            
+                    <!--Inicio do Botão para pagina de login-->
+                    <div class = "possui-cad">
+                        Já possui uma conta? 
+                        <br>
+                        Clique
+                        <a href = "login.html">
+                            aqui.
+                        </a>
+                    </div>
+
+                     <!--Inicio do Botão da InstanciaCliente.php-->
+
+                    <div class = "input-button">
+                        <input type = "submit" name="enviar" value = "Cadastrar">
+                    </div>
+                    <!--Fim do botão-->
+                </form>
+                <!--Fim do form-->
+            </div>
+            <!--Fim do Botão-->
+            
+            <!--Fundo do login-->
+            <div class = "fundo-login">
+                <!--Logo do site-->
+                <div class = "logo">
+                    <a href = "index.html">
+                        <img src = "logo.png" width="240"> <br>
+                    </a>
+                </div>
+        
+                <!--Div Classes redes socias-->
+                <div class = "redes">
+                    <div class = "facebook">
+                        <a href = "https://www.facebook.com/people/Biblioteca-Athena/pfbid0rVYsS8E3FWrJfbjCu6fYysDitAvbM1k3wFoNcoVPnXyk1tqjAhQdJu4d3vEQC5tml/?mibextid=ZbWKwL">
+                            <i class="bi bi-facebook" style="font-size:30px"></i></a>
+                    </div>
+                    <div class = "twitter">
+                        <a href = "https://x.com/b__athena">
+                            <i class="bi bi-twitter" style="font-size:30px"></i></a>
+                    </div>
+                    <div class = "insta">
+                        <a href = "https://www.instagram.com/athena_biblioteca?igsh=aGp4c3Z1YzJ1ZzZq&utm_source=qr">
+                            <i class="bi bi-instagram" style="font-size:30px"></i></a>
+                    </div>
+                    <div class = "tiktok">
+                        <a href = "https://www.tiktok.com/@biblioteca.athena">
+                            <i class="bi bi-tiktok" style="font-size:30px"></i></a>
+                    </div>
+                </div>
+                <!--Fim da div classes redes socias-->
+            </div>
+        </div>
+    </body>
+</html>
